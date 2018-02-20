@@ -33,3 +33,10 @@ pre {
     font-weight: bold;
     @apply .text-black;
 }
+// styles for font awesome icon fonts
+.svg-inline--fa {
+    @apply .text-blue;
+}
+.fa-upload {
+    @apply .text-white;
+}

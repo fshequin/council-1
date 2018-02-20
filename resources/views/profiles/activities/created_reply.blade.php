@@ -1,7 +1,8 @@
 @component('profiles.activities.activity')
     @slot('heading')
-        {{ $profileUser->usernname }} replied to
-        <a href="{{ $activity->subject->thread->path() }}">"{{ $activity->subject->thread->title }}"</a>
+        <i class="mr-2 text-right fas fa-comment"></i>
+        {{ $profileUser->name }} replied to&nbsp;
+        <a class="text-blue-dark hover:text-blue" href="{{ $activity->subject->thread->path() }}">"{{ $activity->subject->thread->title }}"</a>
     @endslot
 
     @slot('body')

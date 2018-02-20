@@ -1,7 +1,10 @@
 @component('profiles.activities.activity')
     @slot('heading')
-        {{ $profileUser->username }} published
-        <a href="{{ $activity->subject->path() }}">{{ $activity->subject->title }}</a>
+        <div class="flex">
+            <i class="mr-2 text-right fas fa-book"></i>
+            {{ $profileUser->name }} published&nbsp;
+            <a class="text-blue-dark hover:text-blue" href="{{ $activity->subject->path() }}">{{ $activity->subject->title }}</a>
+        </div>
     @endslot
 
     @slot('body')

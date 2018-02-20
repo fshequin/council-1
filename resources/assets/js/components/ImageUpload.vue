@@ -1,5 +1,8 @@
 <template>
-    <input type="file" accept="image/*" @change="onChange">
+    <div class="inputfile-wrapper">
+        <input class="inputfile" type="file" accept="image/*" id="file" @change="onChange">
+        <label class="text-xs" for="file"><i class="fas fa-upload"></i> Choose Avatar Image</label>
+    </div>
 </template>
 
 <script>

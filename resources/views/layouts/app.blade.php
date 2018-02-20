@@ -10,6 +10,9 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 

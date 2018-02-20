@@ -59,3 +59,28 @@
         transform: rotate(359deg);
     }
 }
+// styles for avatar image upload button
+.inputfile-wrapper {
+    .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    .inputfile + label {
+        font-size: 1.00em;
+        font-weight: 700;
+        color: white;
+        @apply .bg-blue;
+        display: inline-block;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 3px;
+    }
+    .inputfile:focus + label,
+    .inputfile + label:hover {
+        @apply .bg-blue-darker;
+    }
+}
